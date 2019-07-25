@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>You are Signed In</title>
+	
+</head>
+<body>
+
+
+
+	
+		<h1>Hey {{student_name}}! </h1>
+
+		
+
+		<form action="{{url_for('delete')}}">
+			 <div  style="margin-right:80px">
+				<button type="submit" style="float:right" > Delete Records
+			 	</button>
+			 </div>
+		</form>
+
+		<form action="{{url_for('details')}}">
+			 <div  style="margin-right:170px">
+				<button type="submit" style="float:right" > Edit Details/Password
+			 	</button>
+			 </div>
+		</form>
+	
+		<form action="{{url_for('document')}}">
+			<div  style="margin-right:170px">
+				<button type="submit" style="float:right" > Edit Preference/Upload Doc.
+			 	</button>
+			 </div>
+		</form>
+
+
+	
+		<h4>You are Signed in :)
+		</h4>
+		<form action="{{url_for('logOut')}}">
+			<div  style="margin-right:80px">
+				<button type="submit" style="float:right" > Log Out
+			 	</button>
+			 </div>
+			</form>
+
+		<form action="{{url_for('slot')}}">
+			 <div  style="margin-right:100px">
+				<button type="submit" style="float:right" > Slot Allotment
+			 	</button>
+			 </div>
+		</form>
+
+		
+		<form>
+			<table >
+				<tr>
+				    <td>
+						<big><label>Your Personal Details:</label></big>        
+							<br>
+							<br>
+
+							<table width="380px" height="110px">
+									
+								<tr>
+								<td>
+									
+									&nbsp &nbsp &nbsp<label>Name : </label>
+									
+								</td>
+								<td>
+									{{student_name}}
+									
+								</td>
+								</tr>
+								<tr>
+								<td>
+									&nbsp &nbsp &nbsp<label>Branch : </label>
+								
+								</td>
+								<td>
+									{{student_branch}}
+								</td>
+								</tr>
+								<tr>
+								<td>
+									&nbsp &nbsp &nbsp<label>Email-Id : </label>
+									
+								</td>
+								<td>
+									{{student_email}}
+									
+									
+								</td>
+								</tr>
+								<tr>
+								<td>
+									&nbsp &nbsp &nbsp<label>Enrollment No. : </label>
+								</td>
+								<td>
+									{{student_enrollment}}
+									
+									
+								</td>
+								</tr>
+								<tr>
+								<td>
+									&nbsp &nbsp &nbsp<label>Mobile Number : </label>
+									<br>
+									<br>
+								</td>
+								<td>
+									+91-{{mobileNum}}
+									<br>
+									<br>
+								</td>
+								</tr>
+
+
+
+							</table>
+						</td>
+
+					</tr>
+				<tr>
+				    <td>
+						<big><label>Your Preferences:</label></big>
+						<br>
+						<small>*if not specified please click Edit Preference button</small>
+						<br>
+						<br>
+						
+						<table width="225px" height="75px">
+								
+							<tr>
+							<td>
+								&nbsp &nbsp &nbsp<label>Preference 1 : </label>
+								
+							</td>
+							<td>
+								{{preferenceOne}}
+								
+							</td>
+							</tr>
+							<tr>
+							<td>
+								&nbsp &nbsp &nbsp<label>Preference 2 : </label>
+								
+							</td>
+							<td>
+								{{preferenceTwo}}
+								
+							</td>
+							</tr>
+							<tr>
+							<td>
+								&nbsp &nbsp &nbsp<label>Preference 3 : </label>
+								<br>
+								<br>
+								
+							</td>
+							<td>
+								{{preferenceThree}}
+								<br>
+								<br>
+								
+							</td>
+							</tr>
+
+						</table>
+				<tr>
+				    <td>
+						<big><label>Receipt Number:</label></big>
+						<br>
+						<small>*if not specified please click Upload Document button</small>
+						<br>
+						<br>
+
+						&nbsp &nbsp &nbsp<label>Serial No.:</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp {{receiptNum}}
+						<br>
+						<br>
+					</td>
+				</tr>
+
+				<tr>
+				    <td>
+						<big><label>Alloted Slot:</label></big>
+						<br>
+						<br>
+
+						&nbsp &nbsp &nbsp<label>Slot :</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp{{slot}}
+						<br>
+					</td>
+				</tr>
+				
+				
+					  				
+					
+				
+			</table>
+
+		
+		</form>	
+	
+</body>
+</html>
+

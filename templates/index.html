@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+</head>
+<center>
+<body>
+	<br>
+	<!-- <h2>>>><strong>WELCOME</strong><<<</h2>
+	<h5>TO</h5> -->
+	<b><big><h1>Management System Of Training Department</h1>
+	</big></b>
+
+	<h2>ADGITM</h2>
+	<br>
+
+	<form action="{{url_for('login')}}" method='POST' >
+	
+		<table width="100px" height="50px">
+		<tr>
+		<td>
+			<label>Username:</label>
+			<input type="text" name="email" placeholder="Email-id" size="32">
+			<br>
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+			<label>Password:</label>
+
+			<input type="password" name="password" placeholder="Password" size="32"><br>
+			   <br>
+		
+	</table>
+
+		<button type="submit" style="width: 225px;height: 21px ">Log In</button>
+		</form>
+			<br>
+        	Don't have an account? <a href="{{ url_for('register') }}">Sign up here</a>.
+
+</body>
+</center>
+</html>

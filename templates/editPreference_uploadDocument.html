@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update Preferences</title>
+</head>
+<body>
+	<form action="/document" method='POST' enctype='multipart/form-data' >
+		<br>
+		<h2><label>Update Your Receipt No./ Preferences/Document :</label></h2>
+		<table width="520px" height="300px">
+
+		<tr>
+		<td>
+			<label><big>Edit Receipt No.:</big> </label>
+			<br>
+
+				&nbsp &nbsp<small>*written on the payment slip</small>
+			<br>
+			
+		</td>
+		<td>
+			<input type="number" name="receipt" >	
+			<br>		
+			<br>
+		</td>
+		</tr>
+		<tr>
+		<td>
+			<label><big>Edit Preferences:</big>
+				<br>
+
+				&nbsp &nbsp<small>*write only code in order of your preference</small>
+			 </label>
+			<ul>
+				{% for preference in preferences %}
+				<li>
+					{{preference}}
+				</li>
+				{% endfor %}
+			</ul>
+			<br>
+				
+			</td>
+		
+		<td>
+			<br>
+			<input type="text" name="preference1" >
+			<br>
+			<input type="text" name="preference2" >
+			<br>
+			<input type="text" name="preference3" >
+			<br>	
+		</td>
+		</tr>
+		
+		<tr>
+		<td>
+			<big><label>Attach Payment Slip: </label></big>
+			</td>
+		<td>
+			<input type="file" name="photo">
+			</td>
+		</tr>
+
+	
+	</table>
+
+	<br>
+		
+		<center>
+			<form action="{{url_for('document')}}">
+  			<input type="password" name="password" placeholder="Please Specify Password " style="width:170px " />
+  			
+ 			<input type="submit" value="Submit Changes"  onclick="return confirm('Are you sure you want to update changes?')"/>
+			</form>
+			 <button type="reset"style="float:center"> Reset Changes
+			 </button>
+			 <br>
+			 
+
+
+
+
+			</center>
+
+	</form>
+</body>
+</html>

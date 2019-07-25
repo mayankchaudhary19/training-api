@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Please Login!!</title>
+</head>
+<style >
+	p{
+		margin-top: 260px;
+	}
+</style>
+<body>
+	<center>
+		<p>
+			<form>
+				<table width="400px" height="100px">
+					<tr>
+					    <td>
+						  	<pre><big><label>You are Registered as:      </label> {{name}}</big></pre>
+						</td>
+					<tr>
+				    <td>
+						<pre><big><label>Your Username is:            </label>{{username}}</big><br><small> *username  is your email-id </small></pre>
+					</td>
+				</tr>
+			</table>
+		</form>
+		
+			<br>
+			<pre><big><a href="{{ url_for('index') }}">Login Here</a>!</pre></big>
+			
+		</p>
+	</center>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete Records</title>
+</head>
+<body>
+	<form method='post' action="">
+		<h2><label>&nbsp Delete your records:</label></h2>
+		<br>
+		&nbsp &nbsp &nbsp &nbsp&nbsp&nbsp<label>Please Specify Your Email-id :</label>
+		<input type="text" name="email" placeholder="Your Email-id">
+
+		<ul>
+			<br>
+			<li>
+				<label >Delete your personal details :&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label><input type="submit" name ="action" value="Delete Personal Details" style="width: 180px"  onclick="return confirm('Are you sure, you want to Delete your personal details [Name,Branch,mobile No.] ?')">  
+			</li>
+			&nbsp &nbsp<small>*this does not delete your email-id from our database</small>
+			<br>
+			<br>
+			<li>
+				<label >Delete Preference of Course :&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label><input type="submit" style="width: 180px" name ="action" value="Delete Preferences"  onclick="return confirm('Are you sure, you want to Delete Preference of course and Receipt Number?')" > 
+			</li>
+			<br>
+			<!-- <li> -->
+			<!-- 	<label>Delete Uploaded Document :&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label><input type="submit" style="width: 180px" name ="action" value="Delete Receipt" onclick="return confirm('Are you sure, you want to Delete your Uploaded Document[Fee Receipt]?')">
+			</li> -->
+			<br>
+			<li>
+				<label>Delete all Information Records :&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label><input type="submit"style="width: 180px" name ="action" value="Delete Information" onclick="return confirm('Are you sure, you want to Delete your all records? NOTE: This will Delete Your Enrollmenet No. and you will not be able to use many features!!')">
+			</li>
+			&nbsp &nbsp<small>*this does't delete email-id and password from our database</small>
+			<br>
+			<br>
+			<li>
+				<label>Delete All Records :&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label><input type="submit" style="width: 180px" name ="action" value="Delete Account" onclick="return confirm('Are you sure you want to Delete your Registered Account?')">
+		</ul>
+
+ 					
+		
+ 					    	
+	</form>
+ 							
+	
+</body>
+</html>
+

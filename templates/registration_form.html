@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload Data</title>
+</head>
+<center>
+<body>
+	<h3>ADGITM</h3>
+	<h2>Management System Of Training Department</h2>
+	
+	<h4>REGISTRATION FORM</h4>
+	
+	<form action="{{ url_for('register') }}" method='POST' enctype='multipart/form-data' >
+		<br>
+		<table width="520px" height="350px">
+		
+		<tr>
+		<td>
+			<label>Name of Student: </label>
+			<br>
+			<br>
+		</td>
+		<td>
+			<input type="text" name="name">
+			<br>
+			<br>
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+			<label>Choose Branch:</label>
+			<ul>{% for branch in branches %}
+				 	<li>{{ branch }}</li>				
+			{% endfor %}
+			</ul>
+			</td>
+		<td >
+			<input type="text" name="branch">
+			<br>
+			<br>
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+			<label>Enrollment No.: </label>
+			<br>
+			<br>
+		</td>
+		<td>
+			<input type="number" name="enroll">
+			<br>
+			<br>
+			
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+			<label>Email-id. : </label>
+			<br>
+			<br>
+		</td>
+		<td>
+			<input type="text" name="email-id">
+			<br>
+			<br>
+			
+		</td>
+		</tr>
+
+		<tr>
+		<td>
+			<label>Set Password : </label>
+			<br>
+			<br>
+		</td>
+		<td>
+			<input type="password" name="password">
+			<br>
+			<br>
+			
+		</td>
+		</tr>
+
+		</table>	
+		<br>
+		
+		<center>
+				<button type="submit"> Register
+			 </button>
+			</center>
+	</form>			
+		
+
+</body>
+</html>
+
